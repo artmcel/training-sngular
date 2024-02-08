@@ -14,4 +14,10 @@ class Serie{
         return (n * (n + 1)) / 2;
     }
 
+    static fibonacci(n) {
+        let fib = [0, 1];
+        while (fib.length < n) fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
+        return fib[n - 1];
+    }
+
 }
