@@ -1,15 +1,16 @@
 import { useState } from "react"
-import { serie } from '../utils/Serie'
+import mySerie from '../utils/Serie'
 
 export const FormComponent = () => {
 
     const [n, setN] = useState(0);
     const [result, setResult] = useState(null);
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
         try {
-            setResult( serie(n) );
+            setResult( mySerie.serie(n) );
         } catch (error) {
             setResult( error.message );
         }
