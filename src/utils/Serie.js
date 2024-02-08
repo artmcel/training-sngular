@@ -20,4 +20,9 @@ class Serie{
         return fib[n - 1];
     }
 
+    static serie(n) {
+        if (n <= 0) throw new Error("n debe ser mayor a 0");
+        return this.primo(n) - this.triangular(n - 1) / this.fibonacci(n + 2);
+    }
+
 }
