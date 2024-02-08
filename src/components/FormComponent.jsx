@@ -1,5 +1,6 @@
 import { useState } from "react"
 import mySerie from '../utils/Serie'
+import { ResultComponent } from "./ResultComponent";
 
 export const FormComponent = () => {
 
@@ -42,7 +43,7 @@ export const FormComponent = () => {
                 
             </form>
             <div className="col">
-                { result && <p>Resultado: {result}</p>}
+                { result && <ResultComponent result={result}/>}
             </div>
         </>
         
