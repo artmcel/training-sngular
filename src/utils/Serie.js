@@ -2,7 +2,10 @@
  * se crea la clase Serie
  */
 
-class Serie{
+import React from "react";
+
+
+export default class Serie extends React.Component{
 
     static primo(n) {
         for (let i = 2, sqrt = Math.sqrt(n); i <= sqrt; i++)
