@@ -1,8 +1,8 @@
-export const ResultComponent = () => {
+export const ResultComponent = ( {result} ) => {
   return (
 
     <div>
-        <p>El resultado es: <span className=""></span></p>
+        <p>El resultado es: <span className="fw-bold">{result}</span></p>
     </div>
   )
 }
