@@ -10,4 +10,8 @@ class Serie{
         return n > 1;
     }
 
+    static triangular(n) {
+        return (n * (n + 1)) / 2;
+    }
+
 }
