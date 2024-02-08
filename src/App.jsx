@@ -1,3 +1,5 @@
+import { FormComponent } from "./components/FormComponent";
+
 export default function App() {
 
   return (
@@ -5,6 +7,7 @@ export default function App() {
       <section className="row justify-content-center mt-5">
         <div className="col">
           <h1>Dev Training Sngular</h1>
+          <FormComponent/>
         </div>
 
       </section>
