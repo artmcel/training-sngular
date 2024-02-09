@@ -20,7 +20,7 @@ export const FormComponent = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-label="form">
                 <div className="mb-3">
                     <label htmlFor="number" className="form-label">Ingresa un valor</label>
                     <input
@@ -32,6 +32,7 @@ export const FormComponent = () => {
                         onChange={ (e)=>setN(e.target.value) }
                         aria-describedby="helpId"
                         placeholder="ingresa un valor"
+                        aria-label="number"
                     />
                 </div>
                 <button
