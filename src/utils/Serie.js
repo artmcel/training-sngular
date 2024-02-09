@@ -8,6 +8,7 @@ import React from "react";
 export default class Serie extends React.Component{
 
     static primo(n) {
+        if( n < 2 ) throw new Error("n debe ser mayor a dos");
         for (let i = 2, sqrt = Math.sqrt(n); i <= sqrt; i++)
           if (n % i === 0) return false;
         return n > 1;
